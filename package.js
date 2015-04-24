@@ -1,8 +1,8 @@
 Package.describe({
   name: 'bojicas:howler2',
-  version: '0.0.1',
+  version: '2.0.0_1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Meteor package for Howler audio library',
   // URL to the Git repository containing the source code for this package.
   git: '',
   // By default, Meteor will default to using README.md for documentation.
@@ -12,7 +12,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.addFiles('howler2.js');
+  api.add_files('vendor/howler.min.js', 'client');
+  api.addFiles('howler2.js', 'client');
 });
 
 Package.onTest(function(api) {

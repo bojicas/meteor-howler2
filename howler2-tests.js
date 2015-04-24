@@ -1,5 +1,7 @@
-// Write your tests here!
-// Here is an example.
-Tinytest.add('example', function (test) {
-  test.equal(true, true);
+Tinytest.add('Howler - exists', function (test) {
+  test.isTrue(_.isObject(Howler), 'Howler does not exist');
+});
+
+Tinytest.add('Howl - exists', function (test) {
+  test.isTrue(_.isFunction(Howl), 'Howl does not exist');
 });
