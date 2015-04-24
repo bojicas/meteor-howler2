@@ -1,3 +1,4 @@
 [submodule "vendor"]
 	path = vendor
 	url = https://github.com/goldfire/howler.js.git
+  branch = origin/2.0
