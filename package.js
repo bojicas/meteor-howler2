@@ -15,12 +15,11 @@ Package.onUse(function(api) {
 
   api.addFiles([
     'vendor/src/howler.core.js',
-    'vendor/src/plugins/howler.effects.js',
     'howler2.js'
   ], 'client');
 
   if (api.export) {
-    api.export(['Howler', 'Howl']);
+    api.export('Howl');
   }
 });
 
