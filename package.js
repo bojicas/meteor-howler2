@@ -1,6 +1,6 @@
 Package.describe({
   name: 'bojicas:howler2',
-  version: '2.0.0_2',
+  version: '2.0.0_3',
   // Brief, one-line summary of the package.
   summary: 'Meteor package for Howler audio library',
   // URL to the Git repository containing the source code for this package.
@@ -12,10 +12,11 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.add_files('vendor/howler.min.js', 'client');
+  api.add_files('vendor/src/howler.core.js', 'client');
+  api.add_files('vendor/src/plugins/howler.effects.js', 'client');
   api.addFiles('export.js', 'client');
   if (api.export) {
-    api.export(['Howler', 'Howl'], ['client']);
+    api.export(['Howl'], ['client']);
   }
 });
 
