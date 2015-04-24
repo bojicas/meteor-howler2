@@ -12,11 +12,15 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.add_files('vendor/src/howler.core.js', 'client');
-  api.add_files('vendor/src/plugins/howler.effects.js', 'client');
-  api.addFiles('export.js', 'client');
+
+  api.addFiles([
+    'vendor/src/howler.core.js',
+    'vendor/src/plugins/howler.effects.js',
+    'howler2.js'
+  ], 'client');
+
   if (api.export) {
-    api.export(['Howl'], ['client']);
+    api.export(['Howler', 'Howl']);
   }
 });
 
