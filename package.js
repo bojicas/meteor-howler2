@@ -1,6 +1,6 @@
 Package.describe({
   name: 'bojicas:howler2',
-  version: '2.0.0_4',
+  version: '2.0.0_5',
   // Brief, one-line summary of the package.
   summary: 'Meteor package for Howler audio library',
   // URL to the Git repository containing the source code for this package.
