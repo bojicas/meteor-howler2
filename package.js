@@ -14,13 +14,13 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
   api.addFiles([
+    'before.js',
     'vendor/src/howler.core.js',
-    'howler2.js'
+    'after.js'
   ], 'client');
 
-  if (api.export) {
-    api.export('Howl');
-  }
+  api.export('Howler');
+  api.export('Howl');
 });
 
 Package.onTest(function(api) {
