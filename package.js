@@ -2,7 +2,7 @@ Package.describe({
   name: 'puresick:howler2',
   version: '2.0.3',
   // Brief, one-line summary of the package.
-  summary: 'Meteor package for Howler audio library',
+  summary: 'Fork of bojicas:howler2 Meteor package for Howler audio library supporting master branch',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/puresick/meteor-howler2',
   // By default, Meteor will default to using README.md for documentation.
