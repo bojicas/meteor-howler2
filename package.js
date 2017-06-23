@@ -1,6 +1,6 @@
 Package.describe({
   name: 'puresick:howler2',
-  version: '2.0.3',
+  version: '2.0.4',
   // Brief, one-line summary of the package.
   summary: 'Fork of bojicas:howler2 Meteor package for Howler audio library supporting master branch',
   // URL to the Git repository containing the source code for this package.
@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 
   api.addFiles([
     'before.js',
-    'vendor/src/howler.core.js',
+    'vendor/github.com/goldfire/howler.js/src/howler.core.js',
     'after.js'
   ], 'client');
 
